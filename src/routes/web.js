@@ -17,14 +17,15 @@ let initWebRoutes = (app) => {
     router.get("/about", aboutController.getAboutPage);
     router.get("/service", serviceController.getServicePage);
     router.get("/contact", contactController.getContactPage);
+    router.get("/homepage", homePageController.getHomePage);
 
-    router.get("/", loginController.checkLoggedIn, homePageController.getHomePage);
+    router.get("/", loginController.checkLoggedIn);
     router.post("/logout", loginController.postLogOut);
 
     router.get("/register", registerController.getRegisterPage );
     router.post("/register-new-user", registerController.createNewUser);
 
-    router.get("/login",loginController.checkLoggedOut, loginController.getLoginPage);
+    router.get("/login", loginController.checkLoggedOut, loginController.getLoginPage);
     router.post("/login", loginController.handleLogin);
     return app.use("/", router);
 };
