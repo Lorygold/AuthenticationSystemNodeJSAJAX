@@ -40,17 +40,17 @@
                <div class="column">
                   <div class="card">
                      <div class="container">
-                        <h2>Signup System</h2>
+                        <h2>Sign up System</h2>
                         <img src="/images/signup_schema.jpg" alt="signup_schema">
                         <p class="title">based on Bcrypt, AJAX & MySQL</p>
                         <ol>
-                            <li>GET request caught when "Sign up" link is clicked from the Login page, 
-                                redirectioning the user to the Register page</li>
-                            <li>POST request caught when "Register" button is clicked.
+                            <li>GET request is sent when the "Sign up" link is clicked on the Login page, 
+                                redirecting the user to the Register page</li>
+                            <li>POST request is sent when the "Register" button is clicked.
                                 Before inserting new user credentials to the DB, email and password checks are made.
                             </li>
                             <li>
-                                After that, password is crypted using Bcrypt and data are sent to the DB with AJAX.
+                                After that, the password is crypted using Bcrypt and the data is sent to the DB with AJAX.
                             </li>                            
                         </ol>
                      </div>
@@ -60,14 +60,15 @@
             <div class="column">
                 <div class="card">
                    <div class="container">
-                      <h2>Signin System</h2>
+                      <h2>Sign in System</h2>
                       <img src="/images/signin_schema.jpg" alt="signin_schema">
                       <p class="title">based on Cookie & Passport</p>
                       <ol>
-                          <li>GET request caught when "Login" link is clicked from the navigation bar, 
-                              redirectioning the user to the Login page</li>
-                          <li>POST request caught when "Login" button is clicked.
-                              Before inserting new user credentials to the DB, email and password checks are made. 
+                          <li>GET request is sent when the "Login" link is clicked on the navigation bar, 
+                            redirecting the user to the Login page</li>
+                          <li>POST request is sent when the "Login" button is clicked.<br>   
+                              If the credentials are correct, the user will access to the system for a limited range of time decided by the administrator through Cookie settings or until the user logs out.<br>
+                              Otherwise, attempts for that user will decrease of 1 attempt.
                           </li>
                       </ol>
                    </div>
@@ -83,6 +84,7 @@
                       <ol>
                           <li>SQL Injection</li>
                           <li>Broken Authentication</li>
+                          <li>Brute force</li>
                       </ol>
                    </div>
                 </div>
