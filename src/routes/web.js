@@ -19,7 +19,7 @@ let initWebRoutes = (app) => {
     router.get("/contact", contactController.getContactPage);
     router.get("/homepage", homePageController.getHomePage);
 
-    router.get("/", loginController.checkLoggedIn);
+    router.get("/", loginController.getLoginPage);
     router.post("/logout", loginController.postLogOut);
 
     router.get("/register", registerController.getRegisterPage );

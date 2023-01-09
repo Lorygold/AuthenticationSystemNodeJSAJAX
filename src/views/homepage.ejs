@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home Page</title>
+    <title>Homepage</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <link rel="stylesheet" href="/css/static.css">
+    <link rel="stylesheet" href="/css/homepage.css">
 </head>
 <body>
-<div class="container">
-    <div class="container">
-       <div>
-           <h1>Hello world!</h1>
-           <h2>Welcome: <%= user.fullname %></h2>
-           <div>
-               <form method="POST" action="/logout">
-                   <button type="submit" class="btn btn-primary">Log out</button>
-               </form>
-           </div>
-       </div>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Welcome <%= user.fullname %></h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/service">SERVICE</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                    <form method="POST" action="/logout">
+                        <button type="submit" class="btn btn-primary">Log out</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+
+
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 </body>
 </html>
