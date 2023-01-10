@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="/css/static.css">
     <link rel="stylesheet" href="/css/contact.css">
-    <script src="/js/login.js"></script>
+    <script src="/js/contact.js"></script>
 </head>
 <body>
     <div class="main">
@@ -50,20 +50,25 @@
                   <div class="screen-body-item">
                     <div class="app-form">
                       <div class="app-form-group">
-                        <input class="app-form-control" placeholder="NAME">
+                        <input class="app-form-control" id="name" name="name" placeholder="NAME">
                       </div>
                       <div class="app-form-group">
-                        <input class="app-form-control" placeholder="EMAIL">
+                        <input class="app-form-control" id="email" name="email" placeholder="EMAIL">
                       </div>
                       <div class="app-form-group">
-                        <input class="app-form-control" placeholder="CONTACT NO">
+                        <input class="app-form-control" id="number" name="number" placeholder="CONTACT N°">
                       </div>
                       <div class="app-form-group message">
-                        <input class="app-form-control" placeholder="MESSAGE">
+                        <input class="app-form-control" id="message" name="message" placeholder="MESSAGE">
                       </div>
                       <div class="app-form-group buttons">
-                        <button class="app-form-button"><a class="btn btn-primary" onclick="validateForm();">CANCEL</a></button>
-                        <button class="app-form-button"><a class="btn btn-primary" onclick="validateForm();">SEND</a></button>
+                        <button class="app-form-button">
+                            <a class="btn btn-primary">CANCEL</a>
+                        </button>
+                        <button id="sendBtn" class="app-form-button">
+                            <a class="btn btn-primary" >SEND</a>
+                        </button>
+                        <div class="status"></div>
                       </div>
                     </div>
                   </div>
