@@ -53,7 +53,7 @@ function handleLoginBtn(){
             method: "POST",
             data: {email: email, password: password},
             success: function(data) {
-                window.location.href = "/";
+                window.location.href = "/homepage";
                 resetAlltAttempts();
             },
             error: function(err) {
