@@ -19,12 +19,9 @@ Then start the server:
 $   npm start
 ```
 
+On XAMPP start Apache and MySQL to interact with the database 
+
 Navigate to [`http://localhost:8080`](http://localhost:8080)
-
-##  Overview
-
-
-> XAMPP attiva Apache e SQL 
 
 ##  Next Steps
 
